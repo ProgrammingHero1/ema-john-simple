@@ -36,14 +36,14 @@ const Cart = ( { cart } ) =>
     }, [ cart ] );
 
     return (
-        <div className='bg-yellow-400 text-gray-700 w-2/3 py-5'>
+        <div className='bg-yellow-400 text-gray-700 w-2/3 py-5 shadow-md rounded-md'>
             <div className='flex flex-col gap-2'>
                 <h4 className='px-3'>Order Summary</h4>
                 <p className='bg-green-600 py-1 shadow-sm px-3'>Selected Items: { cart.length }</p>
                 <p className='px-3'>Total Price: { totalPrice }</p>
                 <p className='px-3'>Total Shipping: { totalShipping }</p>
                 <p className='px-3'>Tax: { totalTax.toFixed( 2 ) }</p>
-                <p className='py-2 text-sm font-bold px-3'>Grand Total: { grandTotal }</p>
+                <p className='py-2 text-sm font-bold px-3 bg-cyan-600'>Grand Total: { grandTotal }</p>
             </div>
         </div>
     );
